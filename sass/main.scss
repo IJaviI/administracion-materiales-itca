@@ -1,0 +1,18 @@
+@use "abstracts/mixins";
+@use "abstracts/variables";
+@use "abstracts/utilities";
+
+@use "base/base";
+@use "base/typography";
+
+// Estilos del formulario para ingresar a la app
+@use "layout/access-overlay";
+@use "components/accessForm";
+
+// Estilos del overall de la app
+@use "layout/wrapper";
+@use "layout/sidebar";
+@use "layout/content";
+
+// Estilos de las paginas de la app
+@use "pages/page";

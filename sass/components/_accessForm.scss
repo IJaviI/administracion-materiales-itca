@@ -1,0 +1,187 @@
+// Estilos del formulario para iniciar sesion
+.form {
+  flex: 0 1 42rem;
+  background-color: var(--color-modal-brackground);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: var(--color-dark);
+
+  @media only screen and (max-width: 27.625em) {
+    flex: 1;
+    height: 100vh;
+    border-radius: 0;
+    overflow-y: auto;
+  }
+
+  &__inside {
+    padding: 1.5rem 6rem 2rem 6rem;
+  }
+
+  &__heading {
+    font-family: poppins-Bold;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &:first-child {
+      max-width: 100%;
+      padding: 2rem;
+      background-color: var(--color-purple);
+    }
+
+    p {
+      text-align: center;
+    }
+
+    &-label {
+      display: flex;
+      color: var(--color-dark);
+      background-color: var(--color-light);
+      border: 0.3rem var(--border);
+      overflow: hidden;
+      cursor: pointer;
+
+      span {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.8rem;
+        background-color: #ebebeb;
+      }
+
+      &-state {
+        // border-top-left-radius: 0.5rem;
+        padding: 1rem 2.5rem;
+        width: 100%;
+      }
+    }
+
+    .warning-depto {
+      background-color: var(--color-wrong);
+      padding: 1rem 2rem;
+      color: var(--color-light);
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-inline: auto;
+    width: min(25rem, 100%);
+    height: auto;
+  }
+
+  &__input {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: var(--color-light);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    outline: none;
+
+    &:invalid {
+      border: 0.3rem solid var(--border-invalid);
+    }
+
+    &:valid {
+      border: 0.3rem var(--border);
+    }
+
+    &:placeholder-shown {
+      border: 0.3rem var(--border);
+    }
+
+    &:focus {
+      border: 0.3rem solid var(--color-purple);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--color-bg-contrast);
+    user-select: none;
+
+    svg {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__link {
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--color-purple);
+    background: none;
+    border: none;
+    border-bottom: 0.16rem solid transparent;
+    padding: 0 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 0.16rem solid var(--color-purple);
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-purple);
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__banner {
+    padding: 1.5rem 2rem;
+    background-color: var(--color-wrong);
+    color: var(--color-bg-overlay);
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 0.2rem 0.4rem;
+      padding-top: 0;
+      background-color: var(--color-dark);
+      color: var(--color-bg-overlay);
+      cursor: pointer;
+    }
+  }
+
+  &__select {
+    background-color: white;
+  }
+
+  &__division {
+    border-bottom: 2px var(--border);
+    margin-bottom: 4rem;
+  }
+}
+
+select > * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}

@@ -1,0 +1,7 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 100svh;
+  color: var(--color-secondary-theme);
+  font-size: var(--font-app);
+}

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: poppins-medium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+body {
+  font-family: "poppins-medium";
+  font-size: 1.4rem;
+}
+
+*:link,
+*:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.copyright {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  padding-right: 3rem;
+  text-align: center;
+  font-size: calc(var(--font-app) - 0.2rem);
+}
+
+::selection {
+  color: var(--color-light);
+  background-color: var(--color-purple);
+}

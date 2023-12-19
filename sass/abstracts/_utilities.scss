@@ -1,0 +1,35 @@
+.hidden {
+  display: none !important;
+}
+
+.hide {
+  visibility: hidden !important;
+}
+
+.shown {
+  display: block !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.btn-reset {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+.select-none {
+  user-select: none;
+}

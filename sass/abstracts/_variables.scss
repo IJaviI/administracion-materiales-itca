@@ -1,0 +1,24 @@
+:root {
+  // COLORES PRINCIPALES PARA LA APP
+  --color-dark: #000;
+  --color-light: #fff;
+  --color-modal-brackground: #fff;
+
+  --color-bg-overlay: #f4f5f7;
+  --color-purple: #8054db;
+  --color-help: #fff;
+  --color-wrong: rgba(213, 48, 27, 255);
+  --color-show-user-image: #e4ccfe;
+  --color-disable-user: rgba(233, 35, 9, 0.6);
+  --color-enable-user: #85e0a3;
+  --color-delete: rgba(213, 48, 27, 255);
+  --color-remake-password: #fcd19c;
+  --color-edit: #ffe979;
+  --color-save: #85e0a3;
+
+  // FONTS
+  --font-app: 1.2rem;
+
+  // BORDERS
+  --border-invalid: rgba(213, 48, 27, 255);
+}

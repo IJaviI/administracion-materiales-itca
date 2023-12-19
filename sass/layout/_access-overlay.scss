@@ -1,0 +1,13 @@
+.access-overlay {
+  background-color: var(--color-bg-overlay);
+  min-height: 100svh;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 27.625em) {
+    padding: 0;
+  }
+}
